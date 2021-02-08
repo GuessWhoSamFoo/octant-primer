@@ -1,0 +1,659 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Architecture · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="storybook.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction/">
+            
+                <a href="../introduction/">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../introduction/prerequisites.html">
+            
+                <a href="../introduction/prerequisites.html">
+            
+                    
+                    Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../introduction/resources.html">
+            
+                <a href="../introduction/resources.html">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../introduction/community.html">
+            
+                <a href="../introduction/community.html">
+            
+                    
+                    Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ecosystem/">
+            
+                <a href="../ecosystem/">
+            
+                    
+                    Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ecosystem/related.html">
+            
+                <a href="../ecosystem/related.html">
+            
+                    
+                    Related software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ecosystem/oss.html">
+            
+                <a href="../ecosystem/oss.html">
+            
+                    
+                    Open source
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Octant Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="storybook.html">
+            
+                <a href="storybook.html">
+            
+                    
+                    How to use storybook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../feature/">
+            
+                <a href="../feature/">
+            
+                    
+                    Feature Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../feature/port-forwarding.html">
+            
+                <a href="../feature/port-forwarding.html">
+            
+                    
+                    Port forwarding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../feature/logging.html">
+            
+                <a href="../feature/logging.html">
+            
+                    
+                    Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../feature/filtering.html">
+            
+                <a href="../feature/filtering.html">
+            
+                    
+                    Filtering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../feature/actions.html">
+            
+                <a href="../feature/actions.html">
+            
+                    
+                    Actions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../feature/resource-viewer.html">
+            
+                <a href="../feature/resource-viewer.html">
+            
+                    
+                    Resource Viewer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../feature/yaml.html">
+            
+                <a href="../feature/yaml.html">
+            
+                    
+                    YAML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../extensibility/">
+            
+                <a href="../extensibility/">
+            
+                    
+                    Extensibility
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../extensibility/language.html">
+            
+                <a href="../extensibility/language.html">
+            
+                    
+                    Typescript vs Golang
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../extensibility/capabilities.html">
+            
+                <a href="../extensibility/capabilities.html">
+            
+                    
+                    Capabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../extensibility/routing.html">
+            
+                <a href="../extensibility/routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../development/">
+            
+                <a href="../development/">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../development/ci.html">
+            
+                <a href="../development/ci.html">
+            
+                    
+                    CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../development/electron.html">
+            
+                <a href="../development/electron.html">
+            
+                    
+                    Electron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../development/proposals.html">
+            
+                <a href="../development/proposals.html">
+            
+                    
+                    Proposals
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Architecture</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="architecture">Architecture</h1>
+<p>The overall architecture of Octant is simple because it can be deployed as a standalone binary.</p>
+<p>The server is responsible for </p>
+<pre><code>+------------------+
+|Kubernetes Cluster|
++------+-+---------+
+       ^ |
+       | |
+       | |
+       | |
+       | |
+       | v
+    +--+-----+                                        +---------------------------+
+    | Server +--------------------------------------&gt; | Client (Angular/Electron) |
+    +--------+   ws://localhost:7777/api/v1/stream    +---------------------------+
+</code></pre><blockquote>
+<p>Not shown are plugin(s) which is another extension of the server.</p>
+</blockquote>
+<p>The codebase is divided into two portions: an internal portion under <code>internal/</code> and public code for imports under <code>pkg/</code> (technically three if the client side under <code>web/</code> is included since the project is a monorepo). The server looks for a kubeconfig on the local filesystem and uses it to autheticate with the cluster. This allows viewing a cluster locally without the need to handle security concerns unlike the Kubernetes dashboard running in cluster. Then Octant creates UI components for objects found in the cluster and streams it to a client to show changes in real time.</p>
+<p>Some terminology for neophytes:</p>
+<ul>
+<li>object: a programming paradigm. In Octant and Kubernetes, this refers to a resource in the cluster. See <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/" target="_blank">Kubernetes object</a></li>
+<li>client-go: a Golang library for taking to a Kubernetes cluster. See <a href="https://github.com/kubernetes/client-go" target="_blank">client-go</a></li>
+<li>event: some message that Octant sends to the client</li>
+<li>kubeconfig: file used to access a cluster. See <a href="https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/" target="_blank">kubeconfig</a></li>
+</ul>
+<pre><code>internal
+&#x251C;&#x2500;&#x2500; api - Web server and websocket
+&#x251C;&#x2500;&#x2500; cluster - Clients from client-go
+&#x251C;&#x2500;&#x2500; commands - Flags for configurations on the command line
+&#x251C;&#x2500;&#x2500; config - Configuration for getting the current state of Octant
+&#x251C;&#x2500;&#x2500; context - Request specific data using context
+&#x251C;&#x2500;&#x2500; conversion - Helpers to convert from types
+&#x251C;&#x2500;&#x2500; describer - Creates UI components given a Kubernetes object
+&#x251C;&#x2500;&#x2500; errors - Typed errors used to handle special error cases
+&#x251C;&#x2500;&#x2500; event - Generators for events
+&#x251C;&#x2500;&#x2500; generator - Creates components sent to client over websocket
+&#x251C;&#x2500;&#x2500; gvk - Support Kubernetes objects in Octant
+&#x251C;&#x2500;&#x2500; kubeconfig - Consolidates data from one or more kubeconfigs
+&#x251C;&#x2500;&#x2500; link - Utility to create an URL link from an object
+&#x251C;&#x2500;&#x2500; loading - Checks if an object is loading
+&#x251C;&#x2500;&#x2500; log - Structure logs for output
+&#x251C;&#x2500;&#x2500; mime - Sets MIME type
+&#x251C;&#x2500;&#x2500; module - A group of paths for an object(s). Effectively an internal plugin
+&#x251C;&#x2500;&#x2500; modules - List of internal modules
+&#x251C;&#x2500;&#x2500; objectstatus - Sets a status for a given object (Ok, warning, error)
+&#x251C;&#x2500;&#x2500; objectstore - Internal object store of Kubernetes objects
+&#x251C;&#x2500;&#x2500; objectvisitor - Visitors used to create a graph of Kubernetes objects
+&#x251C;&#x2500;&#x2500; octant - Methods for how Octant can interact with the cluster
+&#x251C;&#x2500;&#x2500; portforward - Maintains port forwards
+&#x251C;&#x2500;&#x2500; printer - Decides what components should be shown given an object
+&#x251C;&#x2500;&#x2500; queryer - Handles finding relationships between objects in Kubernetes
+&#x251C;&#x2500;&#x2500; resourceviewer - Graph of the relationship between objects
+&#x251C;&#x2500;&#x2500; terminal - Creates a terminal to run commains in a container
+&#x251C;&#x2500;&#x2500; testutil - Helpers for unit testing
+&#x2514;&#x2500;&#x2500; util - DRYness goodness
+</code></pre><pre><code>pkg
+&#x251C;&#x2500;&#x2500; action - Allow clients to perform some operation on a cluster
+&#x251C;&#x2500;&#x2500; cluster - Interface for cluster and namespace information
+&#x251C;&#x2500;&#x2500; config - Configure gRPC message sizes
+&#x251C;&#x2500;&#x2500; dash - Coordinate the start of the event loop
+&#x251C;&#x2500;&#x2500; event - List of event types
+&#x251C;&#x2500;&#x2500; icon - Names of icons
+&#x251C;&#x2500;&#x2500; log - Logger interface
+&#x251C;&#x2500;&#x2500; navigation - Generates data for the navigation bar
+&#x251C;&#x2500;&#x2500; octant - Sets up handlers for the server
+&#x251C;&#x2500;&#x2500; plugin - Support for plugins in Golang or Typescript
+&#x251C;&#x2500;&#x2500; store - CRUD operators for objects in a cluster
+&#x2514;&#x2500;&#x2500; view - UI component schemas and interface
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Octant Components">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="storybook.html" class="navigation navigation-next " aria-label="Next page: How to use storybook">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Architecture","level":"1.4.1","depth":2,"next":{"title":"How to use storybook","level":"1.4.2","depth":2,"path":"components/storybook.md","ref":"components/storybook.md","articles":[]},"previous":{"title":"Octant Components","level":"1.4","depth":1,"path":"components/README.md","ref":"components/README.md","articles":[{"title":"Architecture","level":"1.4.1","depth":2,"path":"components/architecture.md","ref":"components/architecture.md","articles":[]},{"title":"How to use storybook","level":"1.4.2","depth":2,"path":"components/storybook.md","ref":"components/storybook.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"components/architecture.md","mtime":"2021-02-08T17:12:42.021Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-08T17:13:07.060Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
